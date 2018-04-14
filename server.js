@@ -78,5 +78,5 @@ app.get('/home', (req, res) => {
 })
 
 app.listen(port, () => {
-    console.log(`Server is up and ready on ${port}.`)
+    console.log(`Server is up and ready on port ${port}.`)
 })
