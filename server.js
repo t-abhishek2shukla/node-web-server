@@ -44,6 +44,13 @@ app.get('/about', (req, res) => {
   });
 });
 
+app.get('/project', (req, res) => {
+    res.render('project.hbs', {
+        pageTitle: 'Add new project here',
+        message: 'Here is the portpolio'
+    })
+})
+
 // /bad - send back json with errorMessage
 app.get('/bad', (req, res) => {
   res.send({
